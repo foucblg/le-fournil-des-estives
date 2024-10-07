@@ -182,7 +182,8 @@ a, a:active, a:focus, a:active {
     nav Start
 --*/
 .navigation {
-  position: relative;
+  position: sticky;
+  top: 85px;
 }
 
 nav {
@@ -677,80 +678,94 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
 /*--
     footer Start
 --*/
-#contact-us .block h3 {
+#footer {
+  padding: 70px 0px;
+}
+
+#footer .gallery li {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 15px !important;
+}
+
+#footer .gallery li img {
+  width: 80px;
+  height: auto;
+}
+
+#footer .block h3 {
   color: #2E2E2E;
   padding-bottom: 25px;
 }
 
-#contact-us .block h3 span {
+#footer .block h3 span {
   color: #FF4F02;
 }
 
-#contact-us .block .blog ul,
-#contact-us .block .info ul,
-#contact-us .block .gallary ul {
-  padding-top: 0px;
+#footer .block .blog ul,
+#footer .block .info ul,
+#footer .block .gallary ul {
+  padding-top: 20px;
 }
 
-#contact-us .block .blog ul li,
-#contact-us .block .info ul li,
-#contact-us .block .gallary ul li {
-  margin-bottom: 0px;
+#footer .block .blog ul li,
+#footer .block .info ul li,
+#footer .block .gallary ul li {
+  margin-bottom: 20px;
 }
 
-#contact-us .block .blog ul li h4,
-#contact-us .block .info ul li h4,
-#contact-us .block .gallary ul li h4 {
+#footer .block .blog ul li h4,
+#footer .block .info ul li h4,
+#footer .block .gallary ul li h4 {
   padding-bottom: 10px;
   display: block;
   color: #FF4F02;
 }
 
-#contact-us .block .blog ul li h4 i,
-#contact-us .block .info ul li h4 i,
-#contact-us .block .gallary ul li h4 i {
+#footer .block .blog ul li h4 i,
+#footer .block .info ul li h4 i,
+#footer .block .gallary ul li h4 i {
   color: #555;
   margin-right: 30px;
   font-size: 20px;
 }
 
-#contact-us .block .blog ul li h4 a,
-#contact-us .block .info ul li h4 a,
-#contact-us .block .gallary ul li h4 a {
+#footer .block .blog ul li h4 a,
+#footer .block .info ul li h4 a,
+#footer .block .gallary ul li h4 a {
   color: #FF4F02;
   font-size: 20px;
   font-weight: 600;
 }
 
-#contact-us .block .blog ul li p,
-#contact-us .block .info ul li p,
-#contact-us .block .info ul li p a,
-#contact-us .block .gallary ul li p {
+#footer .block .blog ul li p,
+#footer .block .info ul li p,
+#footer .block .info ul li p a,
+#footer .block .gallary ul li p {
   color: #474747;
   font-size: 14px;
 }
 
-#contact-us .block .info ul li p a:hover {
+#footer .block .info ul li p a:hover {
   color: #FF4F02;
 }
 
-#contact-us .block .social-media-link h4 {
-  font-size: 18px;
-  padding-bottom: 10px;
-  padding-top: 0px;
-
+#footer .block .social-media-link h3 {
+  font-size: 20px;
+  padding-bottom: 15px;
+  padding-top: 30px;
 }
 
-#contact-us .block .social-media-link h3 span {
+#footer .block .social-media-link h3 span {
   color: #FF4F02;
 }
 
-#contact-us .block .social-media-link ul li {
+#footer .block .social-media-link ul li {
   display: inline-block;
   margin-right: 20px;
 }
 
-#contact-us .block .social-media-link ul li a {
+#footer .block .social-media-link ul li a {
   display: block;
   width: 40px;
   height: 40px;
@@ -765,7 +780,7 @@ nav .block .navbar-default .navbar-nav>.active>a:hover:before {
   transition: .3s all;
 }
 
-#contact-us .block .social-media-link ul li a:hover {
+#footer .block .social-media-link ul li a:hover {
   background: #FF4F02;
   color: #fff;
 }
@@ -959,12 +974,12 @@ ul.horizontal-list li {
 }
 
 #logo{
-  max-width: 10%;
+  max-width: 30%;
 }
 
 @media (max-width:758px) {
 	#logo {
-		max-width: 8em;
+		max-width: 35%;
 	}
 }
 
@@ -1054,10 +1069,4 @@ ul.horizontal-list li {
 	#top-nav {
 		margin-top: 15%;
 	}
-}
-
-.follow{
-  flex:1;
-  text-align: center;
-  color:#FF4F02;
 }

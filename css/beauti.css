@@ -1743,6 +1743,12 @@ pre code {
 }
 
 
+@media (min-width:992px) {
+	.container {
+		width: 970px
+	}
+}
+
 @media (min-width:1200px) {
 	.container {
 		width: 1170px
@@ -6907,7 +6913,11 @@ button.close {
 	}
 }
 
-
+@media (min-width:992px) {
+	.modal-lg {
+		width: 900px
+	}
+}
 
 .tooltip {
 	position: absolute;
@@ -7579,6 +7589,61 @@ button.close {
 	}
 }
 
+@media (min-width:768px) and (max-width:991px) {
+	.visible-sm {
+		display: block !important
+	}
+
+	table.visible-sm {
+		display: table
+	}
+
+	tr.visible-sm {
+		display: table-row !important
+	}
+
+	th.visible-sm,
+	td.visible-sm {
+		display: table-cell !important
+	}
+}
+
+@media (min-width:768px) and (max-width:991px) {
+	.visible-sm-block {
+		display: block !important
+	}
+}
+
+@media (min-width:768px) and (max-width:991px) {
+	.visible-sm-inline {
+		display: inline !important
+	}
+}
+
+@media (min-width:768px) and (max-width:991px) {
+	.visible-sm-inline-block {
+		display: inline-block !important
+	}
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+	.visible-md {
+		display: block !important
+	}
+
+	table.visible-md {
+		display: table
+	}
+
+	tr.visible-md {
+		display: table-row !important
+	}
+
+	th.visible-md,
+	td.visible-md {
+		display: table-cell !important
+	}
+}
 
 @media (min-width:992px) and (max-width:1199px) {
 	.visible-md-block {
