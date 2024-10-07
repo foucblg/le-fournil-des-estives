@@ -2,7 +2,7 @@
 baseURL = ""
 languageCode = "en-us"
 title = "Le Fournil des estives"
-theme = "le-fournil-des-estives"
+theme = "https://foukki.github.io/le-fournil-des-estives/"
 
 ############################# Plugins ##############################
 
