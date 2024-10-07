@@ -1,0 +1,54 @@
+{{ if site.Data.homepage.about.enable }}
+{{ with site.Data.homepage.about }}
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+<section id="about-us">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <div class="info-container">
+            {{ range .icons }}
+              <div class="info-block">
+                  <i class="fas fa-{{ .icon }}"></i>
+                  <strong>{{ .title }}</strong>
+                  <div class="info-text">
+                      <p>{{ .desc }}</p>
+                  </div>
+              </div>
+            {{ end }}
+          </div>
+          <p class="wow fadeInUp descr" style="padding-bottom: 20px;" data-wow-duration="300ms" data-wow-delay="600ms">{{ .description | markdownify }}</p>
+          <div id="listes">
+            <div style="flex:1">
+              <h2 class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="600ms">Intérieur :</h2>
+              <ul class="wow fadeInUp superclass"data-wow-duration="300ms" data-wow-delay="600ms">
+                {{ range .interieur }}
+                <li><i class="trianglist"></i>{{ . }}</li>
+                {{ end }}
+              </ul>
+            </div>
+            <div style="flex:1">
+              <h2 class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="600ms">Activités :</h2>
+              <ul class="wow fadeInUp superclass" data-wow-duration="300ms" data-wow-delay="600ms">
+                {{ range .activites }}
+                <li><i class="trianglist"></i>{{ . }}</li>
+                {{ end }}
+              </ul>
+            </div>
+            <div style="flex:1">
+              <h2 class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="600ms">Extérieur : </h2>
+              <ul class="wow fadeInUp superclass" data-wow-duration="300ms" data-wow-delay="600ms">
+                {{ range .exterieur }}
+                <li><i class="trianglist"></i>{{ . }}</li>
+                {{ end }}
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}
+{{end}}

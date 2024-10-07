@@ -1,0 +1,39 @@
+{{ if site.Params.footer.enable }}
+<section id="footer">
+	<div class="container">
+		<div class="row">
+				<div class="block wow fadeInLeft" data-wow-delay="200ms">
+					<h3>{{ with site.Params.footer.contactInfoTitle }} {{ . | safeHTML }} {{ end }}</h3>
+					<div class="info">
+						<ul class="horizontal-list">
+							{{ range site.Params.footer.contactItem }}
+							<li>
+								<h4><i class="{{.icon}}"></i>{{ .title }}</h4>
+								<p>{{ .content | markdownify }}</p>
+							</li>
+							{{end}}
+						</ul>
+					</div>
+				</div>
+				
+		</div>
+		<div class="col-md-4">
+			<div class="block wow fadeInLeft" data-wow-delay="1100ms">
+				<div class="social-media-link">
+					<h3>{{ with site.Params.footer.socialTitle }} {{ . | safeHTML }} {{ end }}</h3>
+					<ul>
+						{{ range site.Params.footer.socialLink }}
+						<li><a href="{{ .link | safeURL }}"><i class="fa fa-{{ .icon }}"></i></a></li>
+						{{ end }}
+					</ul>
+				</div>
+			</div>
+		</div><!-- .row close -->
+	</div><!-- .containe close -->
+</section><!-- #footer close -->
+{{ end }}
+
+{{ "<!-- JS Plugins -->" | safeHTML }}
+{{ range site.Params.plugins.js}}
+<script src="{{ .URL | absURL }}"></script>
+{{ end }}

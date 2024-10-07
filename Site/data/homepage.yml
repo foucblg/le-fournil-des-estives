@@ -1,0 +1,81 @@
+################## Hero area ##################
+hero_area:
+  enable : true
+  bg_image : "images/header.jpg"
+  overlay : true
+
+################### Gallery ###################
+gallery:
+  enable : true
+  title : "EN IMAGES"
+  images:
+    - "images/image0.jpg"
+    - "images/image1.jpg"
+    - "images/image2.jpg"
+    - "images/image3.jpg"
+    - "images/image5.jpg"
+    - "images/image6.jpg"
+
+
+################ About #######################
+about:
+  enable : true
+  image : "images/cooker-img.png"
+  title : "Featured Your <span> Restaurant’s</span> Website Has To Look Good"
+  icons:
+  - icon: "home"
+    title: "Type de bien"
+    desc: "Gite"
+  - icon: "bed"
+    title: "Nombre de chambres"
+    desc: "5 Chambres"
+  - icon: "users"
+    title: "Nombre de voyageurs"
+    desc: "8 Voyageurs"
+  - icon: "clock"
+    title: "Heure d'arrivée"
+    desc: "16:00"
+  - icon: "clock"
+    title: "Heure de départ"
+    desc: "10:00"
+  - icon: "plus"
+    title: "Équipements & Accès"
+    desc: "Wifi gratuit, Parking gratuit, Draps"
+  - icon: "euro"
+    title: "Prix de la semaine"
+    desc: "910€ en juillet et aout"
+  - icon: "calendar"
+    title: "Durée minimale"
+    desc: "Une semaine"
+  - icon: "cat"
+    title: "Pas d'animaux"
+  description : "Nous louons un élégant gîte de 160m² idéalement situé au coeur d’un hameau entre Corrèze, Puy-de-Dôme et Cantal.
+A proximité du lac de Bort-les-Orgues, non loin du plateau de Millevaches et des gorges de la Dordogne, ce gîte contigu à la propriété familiale est un ancien grenier à foin totalement rénové.
+Intégré dans un parc arboré et comprenant un terrain de tennis, il vous permettra de profiter du calme de la campagne corrézienne, des baignades et des ballades dans les monts d’Auvergne."
+  activites : 
+    - "Ski, wakeboard et autres activités nautiques sur le lac de Bort (5km)"
+    - "Accrobranche au Chateau de Val (14km)"
+    - "Nombreux chemins de randonnée notamment sur le Puy de Sancy"
+    - "Canoë sur les gorges de la Dordogne (14km)"
+    - "Karting à Bourg-Lastic (38km)"
+    - "Concerts estivaux (festival Mille sources et Dordogne et festival de la Vézère)"
+  exterieur : 
+    - Jardin non clos avec table et salon de jardin ouvrant sur le parc
+    - Terrain de tennis
+    - Table de ping-pong
+    - Barbecue
+    - Garage
+  interieur :
+    - Accès par escaller
+    - Grand salon avec bibilothèque
+    - 3 chambres avec 2 lits simples (80x200) pouvant étre réunis pour faire un lit double 160x200
+    - 2 chambres avec 1 lit simple (80x200)
+    - 1 salle de bain et 1 salle de douche
+    - 2 WC Indépendants
+    - Cuisine tout équipée (lave-valselle, Thermomix, machine à café...)
+    - Wifi borne 4G, pas d'écran TV
+  
+
+################ Contact #######################
+contact:
+  enable : true

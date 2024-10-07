@@ -1,0 +1,104 @@
+######################## default configuration ####################
+baseURL = ""
+languageCode = "en-us"
+title = "Le Fournil des estives"
+theme = "le-fournil-des-estives"
+
+############################# Plugins ##############################
+
+# CSS Plugins
+[[params.plugins.css]]
+URL = "css/beauti.css"
+[[params.plugins.css]]
+URL = "css/slick.css"
+[[params.plugins.css]]
+URL = "css/font-awesome.min.css"
+[[params.plugins.css]]
+URL = "css/animate.min.css"
+[[params.plugins.css]]
+URL = "css/venobox.css"
+[[params.plugins.css]]
+URL = "css/main.css"
+[[params.plugins.css]]
+URL = "css/responsive.css"
+
+# JS Plugins
+[[params.plugins.js]]
+URL = "js/jquery.min.js"
+[[params.plugins.js]]
+URL = "js/bootstrap.min.js"
+[[params.plugins.js]]
+URL = "js/slick.min.js"
+[[params.plugins.js]]
+URL = "js/wow.min.js"
+[[params.plugins.js]]
+URL = "js/venobox.min.js"
+[[params.plugins.js]]
+URL = "js/main.js"
+
+############################## navigation ###############################
+
+[[menu.main]]
+name = "ACCUEIL"
+URL = "hero-area"
+weight = 1
+
+
+[[menu.main]]
+name = "Contact"
+URL = "contact-us"
+weight = 3
+
+
+#################### default parameters ################################
+[params]
+logo = "images/logo.jpg"
+# meta data
+author = "Themefisher"
+description = "Boulangerie en Corrèze"
+# google analitycs ID
+google_analitycs_id = "Your ID"
+# mainSections
+main_sections = ["post"]
+# Preloader
+[params.preloader]
+enable = false
+preloader = "" # use .png , .svg or .gif format
+
+################################### Footer ############################
+[params.footer]
+enable = false
+contactInfoTitle = "CONTACT <span>INFO</span> "
+blogTitle = "LATEST <span>BLOG POSTS</span>"
+galleryTitle = "PHOTO <span>STREAM</span>"
+socialTitle = "Nous suivre"
+
+############################ footer contact item
+[[params.footer.contactItem]]
+title = "Téléphone"
+icon = "fa fa-phone"
+content = "06 60 97 38 95"
+
+[[params.footer.contactItem]]
+title = "Adresse"
+icon = "fa fa-map-marker"
+content = "Serre, Anglards-de-Salers, France"
+
+[[params.footer.contactItem]]
+title = "E mail"
+icon = "fa fa-envelope"
+content = "contact@lefournildesestives.fr"
+
+
+######################## Social Icon 
+[[params.footer.socialLink]]
+icon = "facebook"
+link = "https://www.facebook.com/people/Le-Fournil-des-Estives/100094580845079"
+
+[[params.footer.socialLink]]
+icon = "dribbble"
+link = "https://fb.com/themefisher"
+
+[[params.footer.socialLink]]
+icon = "instagram"
+link = "https://www.instagram.com/lefournildesestives"
