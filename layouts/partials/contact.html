@@ -17,7 +17,7 @@
 								<div class="block wow fadeInLeft" data-wow-delay="600ms">
 									<div class="social-media-link">
 										<h4><i style="color:#555; margin-right: 30px;" class="fa fa-users"></i>{{ with site.Params.footer.socialTitle }} {{ . | safeHTML }} {{ end }}</h4>
-										<ul>
+										<ul style="margin-left: 20px;">
 											{{ range site.Params.footer.socialLink }}
 											<li><a href="{{ .link | safeURL }}"><i class="fa fa-{{ .icon }}"></i></a></li>
 											{{ end }}
